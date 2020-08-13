@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slide Presentation</title>
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/custom.css">
+    <link rel="stylesheet" href="public/css/animation.css">
+</head>
+<body>
+    <div id="root">
+        <router-view :elements="elements" :links="links"></router-view>
+
+        <div id="toastify" v-if="toast.message && toast.classname" :class="toast.classname" :key="toast.timer">
+            {{toast.message}}
+        </div>
+    </div>
+
+    <script src="library/vue.js"></script>
+    <script src="library/vue-router.js"></script>
+    <script src="library/ckeditor/ckeditor.js"></script>
+
+    <script src="js/helpers/element.js"></script>
+    <script src="js/helpers/link.js"></script>
+
+    <script src="js/components/header.js"></script>
+    <script src="js/components/element.js"></script>
+    <script src="js/components/link.js"></script>
+    <script src="js/components/modal.js"></script>
+
+    <script src="js/pages/editor.js"></script>
+    <script src="js/pages/view.js"></script>
+
+    <script src="js/routes/routes.js"></script>
+    <script src="js/routes/index.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

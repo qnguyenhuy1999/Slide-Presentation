@@ -1,0 +1,56 @@
+@keyframes toastify {
+    from{
+        right: -100px;
+    }
+    to{
+        right: 20px;
+    }
+}
+
+@keyframes line {
+    from{
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes selected {
+    to{
+        stroke-dashoffset: 1000;
+    }
+}
+
+@keyframes top {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(100px, 80px);
+        opacity: 1;
+    }
+}
+
+@keyframes bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
